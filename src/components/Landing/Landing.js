@@ -47,6 +47,7 @@ const Name = styled.h1`
     font-size: 35px;
     margin: 5px 0;
     color: #B23E59;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
 `
 
 const TopText = styled.h4`
