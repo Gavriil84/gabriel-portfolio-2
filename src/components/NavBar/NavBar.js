@@ -29,7 +29,6 @@ const Nav = styled.nav`
         font-size: 35px;
         text-align: center;
         align-self: center;
-        padding: 10px;
         border-radius: 50%;
         margin-left: 5.9vw;
 

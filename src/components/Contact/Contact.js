@@ -84,7 +84,7 @@ const ContactInfo = styled.div`
         p{
             font-weight: 600;
             margin: 0;
-            color: #fff;
+            color: #B23E59;
             font-size: 25px;
             text-align: center;
         }
@@ -137,8 +137,8 @@ const ContactInfo = styled.div`
             justify-content: center;
             align-items: center;
             img{
-                width: 106px;
-                height: 106px;
+                width: 112px;
+                height: 112px;
                 margin: 0;
                 padding: 0;
             }

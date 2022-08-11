@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import github from '../../assets/icons/github.png'
-import picbeak from '../../assets/projects/picbeak.png'
 
 const Card = ({ title, gitLink, pageLink, description, image, tech }) => {
     return (
@@ -37,15 +36,20 @@ const Card = ({ title, gitLink, pageLink, description, image, tech }) => {
 }
 
 const CardWrapper = styled.div`
+text-align: left;
     height: auto;
     max-width: 331px;
+    max-height: 517px;
     background-color: #6f1c56;
     border-radius: 3px;
     position: relative;
     padding: 10px 20px;
     color: #fff;
-    margin-top: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    @media (min-width: 768px) {
+        margin-top: 20px;
+    }
 
     .icon{
         display: flex;

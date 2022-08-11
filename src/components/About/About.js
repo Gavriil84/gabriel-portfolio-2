@@ -9,6 +9,7 @@ const About = () => {
                 <h2>01. About Me</h2>
                 <div className="line"></div>
             </AboutTitle>
+
             <Image>
                 <img src={gab} alt="Gabriel" />
             </Image>

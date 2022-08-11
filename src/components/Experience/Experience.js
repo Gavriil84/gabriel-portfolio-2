@@ -31,13 +31,8 @@ const Experience = () => {
                         related sites which facilitated narrowing down the target demographic.</li>
                     <li><span>&#9658;</span>Taught TBP (Toyota Business Practices) to employees by conducting medium-term training
                         that enabled problem-solving awareness to take root.</li>
-                    <li><span>&#9658;</span>Assembled the company-wide labor cost budget by collecting data and estimating the total
-                        cost that prevented the miscalculation of the overall budget.</li>
                     <li><span>&#9658;</span>Provided the hiring evaluation database by analyzing and organizing the past candidate's
                         data that led to an understanding of the hiring tendency of the company.</li>
-                    <li><span>&#9658;</span>Coordinated the employment screening program by revamping the interview process from
-                        in-person to online meetings which reduced the risk of covid-19 infection for applicants and
-                        employees.</li>
                 </ul>
             </Accomplishment>
         </ExperienceContainer>
@@ -88,12 +83,17 @@ const JobTitle = styled.div`
     p{
         margin: 0;
         font-size: 14px;
+        color: #030F28;
     }
 `
 
 const Accomplishment = styled.div`
     width: 100%;
     color: #fff;
+
+    @media (min-width: 768px) {
+        width: 70%;
+    }
 
     ul{
         margin-top: 30px;
