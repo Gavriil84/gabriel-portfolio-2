@@ -10,42 +10,45 @@ const About = () => {
                 <div className="line"></div>
             </AboutTitle>
 
-            <Image>
-                <img src={gab} alt="Gabriel" />
-            </Image>
-            <Description>
-                <p>Hello, My name is Gabriel and I enjoy creating web and mobile applications.
-                    My interest in coding began back in 2019 through the experience of creating a
-                    simple web page using HTML and CSS.
-                    I was fascinated by the potential in coding and decided to learn more in-depth.
-                    With the experience I've gained from participating in several projects, I am eager
-                    to use all I've learned to solve problems and improve our lives. <br />
-                    The followings are the technologies I've been working with recently.
-                </p>
-            </Description>
-            <Skills>
-                <div className="front">
-                    <ul>
-                        <li><span>&#9658;</span>JavaScript</li>
-                        <li><span>&#9658;</span>React.js</li>
-                        <li><span>&#9658;</span>React Native</li>
-                        <li><span>&#9658;</span>Next.js</li>
-                        <li><span>&#9658;</span>Github</li>
-                        <li><span>&#9658;</span>Agile</li>
-                    </ul>
-                </div>
-                <div className="back">
-                    <ul>
-                        <li><span>&#9658;</span>Node.js</li>
-                        <li><span>&#9658;</span>Express.js</li>
-                        <li><span>&#9658;</span>MongoDB</li>
-                        <li><span>&#9658;</span>Mongoose</li>
-                        <li><span>&#9658;</span>GraphQL</li>
-                        <li><span>&#9658;</span>Java</li>
-                        <li><span>&#9658;</span>Git</li>
-                    </ul>
-                </div>
-            </Skills>
+            <DesSection>
+                <Image>
+                    <img src={gab} alt="Gabriel" />
+                </Image>
+
+                <Description>
+                    <p>Hello, My name is Gabriel and I enjoy creating web and mobile applications.
+                        My interest in coding began back in 2019 through the experience of creating a
+                        simple web page using HTML and CSS.
+                        I was fascinated by the potential in coding and decided to learn more in-depth.
+                        With the experience I've gained from participating in several projects, I am eager
+                        to use all I've learned to solve problems and improve our lives. <br />
+                        The followings are the technologies I've been working with recently.
+                    </p>
+                    <Skills>
+                        <div className="front">
+                            <ul>
+                                <li><span>&#9658;</span>JavaScript</li>
+                                <li><span>&#9658;</span>React.js</li>
+                                <li><span>&#9658;</span>React Native</li>
+                                <li><span>&#9658;</span>Next.js</li>
+                                <li><span>&#9658;</span>Github</li>
+                                <li><span>&#9658;</span>Agile</li>
+                            </ul>
+                        </div>
+                        <div className="back">
+                            <ul>
+                                <li><span>&#9658;</span>Node.js</li>
+                                <li><span>&#9658;</span>Express.js</li>
+                                <li><span>&#9658;</span>MongoDB</li>
+                                <li><span>&#9658;</span>Mongoose</li>
+                                <li><span>&#9658;</span>GraphQL</li>
+                                <li><span>&#9658;</span>Java</li>
+                                <li><span>&#9658;</span>Git</li>
+                            </ul>
+                        </div>
+                    </Skills>
+                </Description>
+            </DesSection>
         </AboutContainer>
     )
 }
@@ -54,6 +57,13 @@ const AboutContainer = styled.div`
     width: 100%;
     padding: 0 5.9vw;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 const Image = styled.div`
@@ -62,10 +72,23 @@ const Image = styled.div`
     padding: 0;
     margin: 0 auto;
 
+    @media (min-width: 768px) {
+        width: 25vw;
+    }
+
     img{
         width: 100%;
         height: auto;
     }
+`
+
+const DesSection = styled.div`
+            @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 60px;
+            gap: 10vw;
+        }
 `
 
 const AboutTitle = styled.div`
@@ -94,6 +117,10 @@ const AboutTitle = styled.div`
 
 const Description = styled.div`
     width: 100%;
+
+    @media (min-width: 768px) {
+        width: 35vw;
+    }
 
     p{
         color: #fff;

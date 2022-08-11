@@ -41,6 +41,13 @@ const ContactContainer = styled.div`
     width: 100%;
     padding: 0 5.9vw;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     `
 
 const ContactTitle = styled.div`

@@ -9,32 +9,34 @@ const Experience = () => {
                 <div className="line"></div>
             </ExperienceTitle>
 
-            <JobTitle>
-                <h4>Front-end Developer @ Langara College</h4>
-                <p>Feb 2022 - Apr 2022 | Part-time</p>
-            </JobTitle>
-            <Accomplishment>
-                <ul>
-                    <li><span>&#9658;</span>Utilized Next.js to redevelop a redesigned WMDD Program showcase website.</li>
-                    <li><span>&#9658;</span>Used packages like styled-components and react-slick to create a fast and user-friendly interface</li>
-                    <li><span>&#9658;</span>Migrated Next.js app deployment from Vercel to Amazon AWS EC2.</li>
-                </ul>
-            </Accomplishment>
+            <JobWrapper>
+                <JobTitle>
+                    <h4>Front-end Developer @ Langara College</h4>
+                    <p>Feb 2022 - Apr 2022 | Part-time</p>
+                </JobTitle>
+                <Accomplishment>
+                    <ul>
+                        <li><span>&#9658;</span>Utilized Next.js to redevelop a redesigned WMDD Program showcase website.</li>
+                        <li><span>&#9658;</span>Used packages like styled-components and react-slick to create a fast and user-friendly interface</li>
+                        <li><span>&#9658;</span>Migrated Next.js app deployment from Vercel to Amazon AWS EC2.</li>
+                    </ul>
+                </Accomplishment>
 
-            <JobTitle>
-                <h4>HR Generalist @ Toyotsu Logistics</h4>
-                <p>Apr 2016 - Feb 2021 | Full-time</p>
-            </JobTitle>
-            <Accomplishment>
-                <ul>
-                    <li><span>&#9658;</span>Analyzed the latest applicants' trends by collecting data from recruitment agents and
-                        related sites which facilitated narrowing down the target demographic.</li>
-                    <li><span>&#9658;</span>Taught TBP (Toyota Business Practices) to employees by conducting medium-term training
-                        that enabled problem-solving awareness to take root.</li>
-                    <li><span>&#9658;</span>Provided the hiring evaluation database by analyzing and organizing the past candidate's
-                        data that led to an understanding of the hiring tendency of the company.</li>
-                </ul>
-            </Accomplishment>
+                <JobTitle>
+                    <h4>HR Generalist @ Toyotsu Logistics</h4>
+                    <p>Apr 2016 - Feb 2021 | Full-time</p>
+                </JobTitle>
+                <Accomplishment>
+                    <ul>
+                        <li><span>&#9658;</span>Analyzed the latest applicants' trends by collecting data from recruitment agents and
+                            related sites which facilitated narrowing down the target demographic.</li>
+                        <li><span>&#9658;</span>Taught TBP (Toyota Business Practices) to employees by conducting medium-term training
+                            that enabled problem-solving awareness to take root.</li>
+                        <li><span>&#9658;</span>Provided the hiring evaluation database by analyzing and organizing the past candidate's
+                            data that led to an understanding of the hiring tendency of the company.</li>
+                    </ul>
+                </Accomplishment>
+            </JobWrapper>
         </ExperienceContainer>
     )
 }
@@ -43,6 +45,19 @@ const ExperienceContainer = styled.div`
     width: 100%;
     padding: 0 5.9vw;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+`
+
+const JobWrapper = styled.div`
+@media (min-width: 768px) {
+    width: 70vw;
+    margin: 0 auto;
+}
 `
 
 const ExperienceTitle = styled.div`
@@ -71,7 +86,7 @@ const ExperienceTitle = styled.div`
 const JobTitle = styled.div`
     width: 100%;
     color: #fff;
-    margin-top: 60px;
+    margin-top: 30px;
 
     h4{
         margin: 0;
@@ -91,9 +106,7 @@ const Accomplishment = styled.div`
     width: 100%;
     color: #fff;
 
-    @media (min-width: 768px) {
-        width: 70%;
-    }
+
 
     ul{
         margin-top: 30px;

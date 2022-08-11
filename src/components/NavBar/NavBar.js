@@ -16,7 +16,6 @@ const NavBar = () => {
 const Nav = styled.nav`
     width: 100%;
     height: 80px;
-    
     display: flex;
     justify-content: space-between;
     position: fixed;

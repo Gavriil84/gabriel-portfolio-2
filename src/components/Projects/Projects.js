@@ -105,6 +105,7 @@ const ProjectContainer = styled.div`
     width: 100%;
     flex-direction: column;
     overflow: hidden;
+
 `
 
 const CardContainer = styled.div`
