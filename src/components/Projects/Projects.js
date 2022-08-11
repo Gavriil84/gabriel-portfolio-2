@@ -50,41 +50,44 @@ const Projects = () => {
                 <div className="line"></div>
             </ProjectTitle>
 
-            <Card
-                title={courteC.title}
-                gitLink={courteC.gitLink}
-                pageLink={courteC.pageLink}
-                description={courteC.description}
-                image={courteC.image}
-                tech={courteC.tech}
-            />
+            <CardContainer>
 
-            <Card
-                title={courteS.title}
-                gitLink={courteS.gitLink}
-                pageLink={courteS.pageLink}
-                description={courteS.description}
-                image={courteS.image}
-                tech={courteS.tech}
-            />
+                <Card
+                    title={courteC.title}
+                    gitLink={courteC.gitLink}
+                    pageLink={courteC.pageLink}
+                    description={courteC.description}
+                    image={courteC.image}
+                    tech={courteC.tech}
+                />
 
-            <Card
-                title={picbeak.title}
-                gitLink={picbeak.gitLink}
-                pageLink={picbeak.pageLink}
-                description={picbeak.description}
-                image={picbeak.image}
-                tech={picbeak.tech}
-            />
+                <Card
+                    title={courteS.title}
+                    gitLink={courteS.gitLink}
+                    pageLink={courteS.pageLink}
+                    description={courteS.description}
+                    image={courteS.image}
+                    tech={courteS.tech}
+                />
 
-            <Card
-                title={scave.title}
-                gitLink={scave.gitLink}
-                pageLink={scave.pageLink}
-                description={scave.description}
-                image={scave.image}
-                tech={scave.tech}
-            />
+                <Card
+                    title={picbeak.title}
+                    gitLink={picbeak.gitLink}
+                    pageLink={picbeak.pageLink}
+                    description={picbeak.description}
+                    image={picbeak.image}
+                    tech={picbeak.tech}
+                />
+
+                <Card
+                    title={scave.title}
+                    gitLink={scave.gitLink}
+                    pageLink={scave.pageLink}
+                    description={scave.description}
+                    image={scave.image}
+                    tech={scave.tech}
+                />
+            </CardContainer>
 
         </ProjectContainer>
     )
@@ -94,6 +97,16 @@ const ProjectContainer = styled.div`
     width: 100%;
     padding: 0 5.9vw;
     flex-direction: column;
+`
+
+const CardContainer = styled.div`
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 `
 
 const ProjectTitle = styled.div`
