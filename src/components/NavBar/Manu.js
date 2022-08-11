@@ -39,7 +39,7 @@ const List = styled.ul`
         padding-top: 100px;
         flex-flow: column nowrap;
         justify-content: flex-start;
-        background-color: #6F1C56;
+        background: rgba(3,15,40,0.95);
         position: fixed;
         z-index: 100;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
