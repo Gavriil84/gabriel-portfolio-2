@@ -1,33 +1,24 @@
 .container {
     width: 100%;
-    height: 100%;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .hero {
     height: 100vh;
     display: flex;
-    scroll-snap-align: start;
 }
 
 .about {
-    height: 100vh;
+    height: 1100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    background-color: yellow;
+    background-color: #6f1c56;
 }
 
 .project {
-    height: 100vh;
+    height: 2500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    background-color: green;
+    background-color: #030f28;
 }
 
 .experience {
@@ -35,8 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    background-color: blue;
+    background-color: #6f1c56;
 }
 
 .contact {
@@ -44,6 +34,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    background-color: purple;
+    background-color: #030f28;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        scroll-snap-align: start;
+    }
+
+    .about {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        background-color: #6f1c56;
+    }
+
+    .project {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        background-color: #220d44;
+    }
+
+    .experience {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        background-color: #6f1c56;
+    }
+
+    .contact {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        background-color: #220d44;
+    }
 }
