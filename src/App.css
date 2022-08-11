@@ -22,18 +22,14 @@
 }
 
 .experience {
-    height: 100vh;
+    height: 1150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #6f1c56;
 }
 
 .contact {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #030f28;
 }
 

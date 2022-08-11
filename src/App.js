@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -18,10 +20,10 @@ function App() {
         <Projects />
       </section>
       <section className="experience" id="experience">
-        <h1>Fourth Page</h1>
+        <Experience />
       </section>
       <section className="contact" id="contact">
-        <h1>Fifth Page</h1>
+        <Contact />
       </section>
     </div>
   );
