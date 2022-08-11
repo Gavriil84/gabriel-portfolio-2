@@ -1,6 +1,8 @@
 import Hero from './components/Hero/Hero';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -10,10 +12,10 @@ function App() {
         <Hero />
       </section>
       <section className="about" id="about">
-        <h1>Second Page</h1>
+        <About />
       </section>
       <section className="project" id="project">
-        <h1>Third Page</h1>
+        <Projects />
       </section>
       <section className="experience" id="experience">
         <h1>Fourth Page</h1>
