@@ -9,6 +9,7 @@ const Manu = ({ open, setOpen }) => {
             <li onClick={() => setOpen(!open)}><a href='#project'>Projects</a></li>
             <li onClick={() => setOpen(!open)}><a href='#experience'>Experience</a></li>
             <li onClick={() => setOpen(!open)}><a href='#contact'>Contact</a></li>
+            <li className="resume" onClick={() => setOpen(!open)}><a href='https://drive.google.com/file/d/10bSng3dHt7906ivdT12lqCaIPMJdBrrM/view?usp=sharing' target="_blank" rel="noreferrer">Resume</a></li>
         </List>
     )
 }
@@ -33,6 +34,21 @@ const List = styled.ul`
     li{
         padding: 18px 10px;
         cursor: pointer;
+    }
+
+    .resume{
+        background-color: #B23E59;
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-radius:3px;
+
+        @media (max-width: 768px) {
+            margin-top: 10px;
+        }
+        
+        a{
+            color: #030F28;
+        }
     }
 
     @media (max-width: 768px) {
