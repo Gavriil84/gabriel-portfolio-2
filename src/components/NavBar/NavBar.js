@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <Nav>
             <div className="logo">
-                <p>GW</p>
+                <p><a href="/">GW</a></p>
             </div>
             <Burger />
         </Nav>
@@ -34,6 +34,11 @@ const Nav = styled.nav`
         p{
             padding: 0;
             margin: 2px 0 0 0;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
         }
     }
 

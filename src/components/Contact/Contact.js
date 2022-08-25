@@ -31,8 +31,7 @@ const Contact = () => {
                     </div>
                 </div>
             </ContactInfo>
-
-
+            <p className="copyright">&copy; Gabriel Watanabe, 2022</p>
         </ContactContainer>
     )
 }
@@ -41,6 +40,19 @@ const ContactContainer = styled.div`
     width: 100%;
     padding: 0 5.9vw;
     flex-direction: column;
+
+    .copyright {
+        color: #fff;
+        margin-top: 30px;
+        font-size: 12px;
+
+        @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
 
     @media (min-width: 768px) {
         display: flex;
